@@ -1,0 +1,11 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'HealthRecord/css/mystyle.css' %}"/>
+    </head>
+    <body>
+        <p>It is currently {{current_time}} {% if timezone %} in {{timezone}} {% endif %}</p>
+        
+    </body>
+</html>

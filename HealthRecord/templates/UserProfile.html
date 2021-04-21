@@ -1,0 +1,272 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>User Profile Page</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href=" {% static 'HealthRecord/css/bootstrap.min.css' %}">
+     <link rel="stylesheet" href=" {% static 'HealthRecord/css/magnific-popup.css' %}">
+
+     <link rel="stylesheet" href=" {% static 'HealthRecord/css/font-awesome.min.css' %}">
+     <link rel="stylesheet" href=" {% static 'HealthRecord/css/animate.css' %}">
+
+     <link rel="stylesheet" href=" {% static 'HealthRecord/css/owl.carousel.css' %}">
+     <link rel="stylesheet" href=" {% static 'HealthRecord/css/owl.theme.default.min.css' %}">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href=" {% static 'HealthRecord/css/tooplate-style.css' %}">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- HEADER -->
+     <header>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-3">
+                         <p>Welcome to MyHealth Care Portal</p>
+                    </div>
+                         
+                    <div class="col-md-8 col-sm-9 text-align-right">
+                         
+							<span class="user-icon"><i class="fa fa-user"></i> Welcome, User Name</span>
+                         <span class="email-icon"><i class="fa fa-question-circle"></i> <a href="mailto:info@company.com">Need Help?</a></span>
+						 <span class="user-icon"><i class="fa fa-arrow-right"></i> Sign Out</span>
+                    </div>
+
+               </div>
+          </div>
+     </header>
+
+
+     <!-- MENU -->
+     <section class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="HealthRecord/" class="navbar-brand">My <i class="fa fa-h-square"></i>ealth</a>
+               </div>
+
+               
+
+          </div>
+     </section>
+
+
+     <!-- NEWS DETAIL -->
+     <section id="news-detail" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-8 col-sm-7">
+                         <!-- NEWS THUMB -->
+						 
+						  </div>
+                              <h3>Welcome!</h3>
+                              
+                              <blockquote>MyHealthRecord gives you instant access to your medical information and personal health records. To help you get started please view or enter your data.</blockquote>
+                              
+                              
+                         <div class="news-detail-thumbprofile" style="width: 600px; float: left;">
+                              <div class="news-image" >
+                                   <img src=" {% static 'HealthRecord/images/insideprofile.jpg' %}" class="img-responsive" alt="" >
+                             
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-5"   style="margin-right: 1000px;">
+							
+							
+                         <div class="news-sidebar">
+                              <div class="news-author">
+                                   <h4>Track your data</h4>
+                                   
+                              </div>
+							<!-- SECTION TITLE -->
+                    
+								 
+							  <div class="datatrack">
+                                   <div class="stories-image">
+                                        <a href="#"><img src=" {% static 'HealthRecord/images/height.jpg' %}" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        
+										<label for="Message">Enter Height</label>
+										<input type="text" class="form-control" id="name" name="name" placeholder="Height" required="required">
+                                        
+                                   </div>
+                              </div>
+							  
+							  <div class="datatrack"  class="col-md-12 col-sm-12">
+                                   <div class="stories-image">
+                                        <a href="#"><img src=" {% static 'HealthRecord/images/weight.jpg' %}" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        
+										<label for="Message">Enter Weight</label>
+										<input type="text" class="form-control" id="name" name="name" placeholder="Weight" >
+                                        
+                                   </div>
+                              </div>
+							  
+							   <div class="datatrack"  class="col-md-12 col-sm-12">
+                                   <div class="stories-image">
+                                        <a href="#"><img src=" {% static 'HealthRecord/images/bloodpressure.jpg' %}" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        
+										<label for="Message">Enter Blood Pressure</label>
+										<input type="text" class="form-control" id="name" name="name" placeholder="Blood Pressure" >
+                                        
+                                   </div>
+                              </div>
+							  
+							   <div class="datatrack"  class="col-md-12 col-sm-12">
+                                   <div class="stories-image">
+                                        <a href="#"><img src=" {% static 'HealthRecord/images/bmi.jpg' %}" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        
+										<label for="Message">Enter BMI</label>
+										<input type="text" class="form-control" id="name" name="name" placeholder="BMI" >
+                                        
+                                   </div>
+                              </div>
+							  <div class="datatrack"  class="col-md-12 col-sm-12">
+                                   <div class="stories-image">
+                                        <a href="#"><img src=" {% static 'HealthRecord/images/prescription.jpg' %}" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="col-md-12 col-sm-12">
+                                        
+										<label for="Message">Prescription History</label>
+                                       
+                                        
+                                   </div>
+								   <div class="col-md-12 col-sm-12">
+                                        
+										
+                                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="List your prescription history if any"></textarea>
+                                        
+                                   </div>
+                              </div>
+							  <br>
+								   <br>
+								   <br>
+							   <div class="datatrack"  class="col-md-12 col-sm-12">
+                                   <div class="stories-image">
+                                        <a href="#"><img src=" {% static 'HealthRecord/images/immune.jpg' %}" class="img-responsive" alt=""></a>
+                                   </div>
+								   
+								   
+                                   <div class="col-md-12 col-sm-12" >
+                                        
+										<label for="Message">Immunization History</label>
+                                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="List your immunization history"></textarea>
+                                        
+                                   </div>
+                              </div>
+							  
+							  
+
+                             
+                                 
+                              
+
+                             
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+         
+
+
+    
+
+
+     <!-- FOOTER -->
+     <footer data-stellar-background-ratio="5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
+                              <p>Fusce at libero iaculis, venenatis augue quis, pharetra lorem. Curabitur ut dolor eu elit consequat ultricies.</p>
+
+                              <div class="contact-info">
+                                   <p><i class="fa fa-phone"></i> 010-070-0170</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              
+                              <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src=" {% static 'HealthRecord/images/news-image.jpg' %}" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#"><h5>MyHealth Care</h5></a>
+                                        <span>April 21, 2021</span>
+                                   </div>
+                              </div>
+
+                              
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb">
+                              <div class="news-author">
+                                   <h4>About the author</h4>
+                                   <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque.</p>
+                              </div>
+
+                              
+                         </div>
+                    </div>
+
+
+     <!-- SCRIPTS -->
+     <script src="{% static 'HealthRecord/js/jquery.js' %}"></script>
+     <script src="{% static 'HealthRecord/js/jquery.magnific-popup.min.js' %}"></script>
+     <script src="{% static 'HealthRecord/js/jquery.magnific-popup.min.js' %}"></script>
+     <script src="{% static 'HealthRecord/js/bootstrap.min.js' %}"></script>
+     <script src="{% static 'HealthRecord/js/jquery.sticky.js' %}"></script>
+     <script src="{% static 'HealthRecord/js/jquery.stellar.min.js' %}"></script>
+     <script src="{% static 'HealthRecord/js/wow.min.js' %}"></script>
+     <script src="{% static 'HealthRecord/js/smoothscroll.js' %}"></script>
+     <script src="{% static 'HealthRecord/js/owl.carousel.min.js' %}"></script>
+     <script src="{% static 'HealthRecord/js/custom.js' %}"></script>
+</body>
+</html>
