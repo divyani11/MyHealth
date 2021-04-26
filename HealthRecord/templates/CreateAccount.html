@@ -49,7 +49,7 @@
                          
                     <div class="col-md-8 col-sm-7 text-align-right">
 						 
-                         <span class="user-icon"><i class="fa fa-user"></i> Sign In</span>
+                         <span class="user-icon"><i class="fa fa-user"></i><a href="login">Sign In</a> </span>
                        
                          <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="mailto:info@company.com">info@company.com</a></span>
                     </div>
@@ -77,9 +77,9 @@
                <!-- MENU LINKS -->
                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                         <li><a href="#top" class="smoothScroll">Home</a></li>
-                         <li><a href="#about" class="smoothScroll">About Us</a></li>
-                         <li><a href="#contact" class="smoothScroll">Contact</a></li>    
+                         <li><a href="home\" class="smoothScroll">Home</a></li>
+                         <li><a href="home\" class="smoothScroll">About Us</a></li>
+                         <li><a href="home\" class="smoothScroll">Contact</a></li>    
 						 
                     </ul>
                </div>
@@ -99,8 +99,9 @@
 
                     <div class="col-md-6 col-sm-6">
                          <!-- CONTACT FORM HERE -->
-                         <form id="appointment-form" role="form" method="post" action="#">
+                         <form id="appointment-form" role="form" method="POST" action="#">
                               {% csrf_token %}
+                              {{form}}
                               <!-- SECTION TITLE -->
                               <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
                                    <h2>Registration</h2>

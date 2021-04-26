@@ -5,11 +5,7 @@
 <head>
 
      <title>MyHealth Portal</title>
-<!--
 
-
-
--->
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
      <meta name="description" content="">
@@ -78,7 +74,7 @@
                <!-- MENU LINKS -->
                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                         <li><a href="#top" class="smoothScroll">Home</a></li>
+                         <li><a href="home" class="smoothScroll">Home</a></li>
                          <li><a href="#about" class="smoothScroll">About Us</a></li>
                          <li><a href="#contact" class="smoothScroll">Contact</a></li>    
 						 
@@ -99,19 +95,22 @@
 
                     <div class="col-md-12 col-sm-6">
                          <!-- LOGIN FORM HERE -->
-                         <form id="login-form" role="form" method="post" action="#">
+                         <form id="login-form" role="form" method="POST" action="#">
                               {% csrf_token %}
+                              {{ login_form }}
+
                               <!-- SECTION TITLE -->
                               <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
                                    <h2>My <i class="fa fa-h-square"></i>ealth Account Login</h2>
                               </div>
-
-
+                               
+                             
 		
-                              <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                   <div class="col-md-6 col-sm-6">
+                             <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                 <div class="col-md-6 col-sm-6">
                                         <label for="name">Username</label>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Username" required="required" >
+                                       <!--<input type="text" class="form-control" id="name" name="name" placeholder="Username" required="required" >-->
+                                        <input type="text" name="username" value="{{ forms.username }}">
                                    </div>
 									<br>
 									<br>
@@ -120,37 +119,40 @@
 									
                                    <div class="col-md-6 col-sm-6" >
                                         <label for="password">Password</label>
-                                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required="required">
+                                       <!--<input type="password" class="form-control" id="password" name="password" placeholder="Password" required="required">-->
+                                        <input type="password" name="password"  required="required" value="{{ forms.password }}">
                                    </div>
 									<br>
 									<br>
 									<br>
 									<br>
-								   <div class="col-md-6 col-sm-6" >
+								   <!--<div class="col-md-6 col-sm-6" >
 										<a href="">Forgot Password?</a> 
-								   </div>
-									<br>
-									<br>
-									<br>
+								   </div>-->
 									
-									
+                                        
+                              </div>  
+                                         
+                                         
                                    <div class="col-md-2 col-sm-2">
                                        <button type="submit" class="form-control" id="cf-submit" name="submit" align="center" onclick="window.location='user_profile/';">Login</button>
-                                        
+                                        <input type="hidden" name="next" value="{{user_profile}}">
                                    </div>
 								   
-								  <div class="col-md-2 col-sm-2">
+                                   <div class="col-md-2 col-sm-2" >
                                         
                                         <button type="submit" class="form-control" id="cf-submit" name="submit" onclick="window.location='create_account/';">Create Account</button>
+                                        
                                    </div>
 								   
                               </div>
-							   
-                        </form>
-						
+                              
+                        </form> 
+                        
+                    </div> 
                     </div>
-
-               </div>
+                    
+                    
           </div>
      </section>
 	 

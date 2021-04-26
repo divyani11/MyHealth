@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.admin.decorators import register
-from HealthRecord.models import H_User, Address, UserDetails
+from HealthRecord.models import H_User, Address, UserDetails, UserHealthData
 
 # Register your models here.
 
@@ -24,6 +24,13 @@ class AddressAdmin(admin.ModelAdmin):
 @register(UserDetails)
 class UserDetailsAdmin(admin.ModelAdmin):
     list_display = ('fname','lname', 'email','dateOfBirth','phone','username')
+
+    def __str__(self):
+        return super().__str__()
+
+@register(UserHealthData)
+class UserHealthDataAdmin(admin.ModelAdmin):
+    list_display = ('height','weight', 'bmi_index','blood_pressure','prescription','immunization')
 
     def __str__(self):
         return super().__str__()

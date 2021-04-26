@@ -36,6 +36,23 @@ class UserDetails(models.Model):
     def __str__(self):
         return f"{self.username}"
 
+class UserHealthData(models.Model):
+    username = models.ForeignKey(to=UserDetails,on_delete=models.CASCADE)
+    height = models.CharField(max_length=120,blank=False,default='')
+    weight = models.CharField(max_length=120,blank=False,default='')
+    bmi_index = models.CharField(max_length=120,blank=False,default='')
+    blood_pressure = models.CharField(max_length=120,blank=False,default='')
+    prescription = models.TextField(max_length=120,blank=False,default='')
+    immunization = models.TextField(max_length=120,blank=False,default='')
+    
+
+    def __str__(self):
+        return f"{self.username}"
+
+
+
+
+
 
 
 

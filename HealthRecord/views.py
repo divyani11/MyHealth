@@ -4,7 +4,11 @@ from django.views import View
 from django.template.response import SimpleTemplateResponse
 from datetime import date, datetime
 from .models import UserDetails
+from django.contrib.auth.views  import LoginView
 from django.views.decorators.csrf import csrf_protect,csrf_exempt
+from django.views.generic.edit import FormView
+from django.views.generic.base import TemplateView
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 
 # Create your views here.
 
@@ -24,9 +28,7 @@ def get_current_time(request):
     response = SimpleTemplateResponse('current_time.html',context)
     return response
 
-def login(request):
-    response = SimpleTemplateResponse('Login.html')
-    return response
+
 
 
 def create_account(request):
@@ -56,3 +58,28 @@ def user_profile(request):
 class HealthHome(View):
     def homepage(self, request):
         return HttpResponse('HealthHomePage')
+
+class Login(LoginView):
+    
+    template_name = 'Login.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return context
+
+class SignUpView(FormView):
+    template_name = 'CreateAccount.html'
+    form_class = UserCreationForm
+
+    def get_context_data(self,**kwargs):
+        context = super().get_context_data(**kwargs)
+        context['login_form'] = AuthenticationForm()
+        return context
+
+class HomeView(TemplateView):
+
+    template_name = 'Home.html'
+
+    def get_context_data(self,**kwargs):
+        context = super().get_context_data(**kwargs)
+        return context
