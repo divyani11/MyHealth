@@ -1,0 +1,6 @@
+Python==3.8.7
+pip==21.0.1
+Django~=3.1.7
+djangorestframework==3.12.41
+pylint~=2.6.0
+pylint-django==2.4.3
