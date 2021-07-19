@@ -27,7 +27,6 @@ SECRET_KEY = 'w0hbh(c-b1=$hyia(j+%f@#px4f9rmgss1q8t(nllt02nr)h1h'
 DEBUG = True
 
 ALLOWED_HOSTS = ['myhealthportal.herokuapp.com']
-ALLOWED_HOSTS = []
 
 
 # Application definition
