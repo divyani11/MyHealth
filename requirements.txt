@@ -1,6 +1,12 @@
-Python==3.8.7
+
 pip==21.0.1
 Django~=3.1.7
-djangorestframework==3.12.41
+djangorestframework==3.12.4
 pylint~=2.6.0
 pylint-django==2.4.3
+django-phone-field==1.8.1
+dj-database-url==0.4.2
+gunicorn==19.7.1
+psycopg2==2.7.3.2
+pytz==2017.3
+whitenoise==3.3.1
