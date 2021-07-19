@@ -27,6 +27,7 @@ SECRET_KEY = 'w0hbh(c-b1=$hyia(j+%f@#px4f9rmgss1q8t(nllt02nr)h1h'
 DEBUG = True
 
 ALLOWED_HOSTS = ['herokudjangoapp.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -150,4 +151,4 @@ STATICFILES_DIRS = (
 )
 
 #  Add configuration for static files storage using whitenoise
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
