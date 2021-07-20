@@ -7,3 +7,6 @@ This websiteis developed with Python -using Django framework for the ease of sto
 
 -	The data is stored for their personal use to keep track as well as shared with doctors if required so the doctor will know about patient’s medical history before check-up itself.
 
+If you would like to see this project, click the link below.
+
+https://myhealthportal.herokuapp.com/
